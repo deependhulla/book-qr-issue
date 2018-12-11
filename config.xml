@@ -17,7 +17,7 @@ Issue Library Book via QR Code
         Deepen Dhulla
     </author>
  <access origin="*" />
-
+<platform name="android" />
     <preference name="permissions" value="none"/>
     <preference name="phonegap-version" value="cli-6.5.0" /> 
     <preference name="fullscreen" value="true" />
