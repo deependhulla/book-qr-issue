@@ -27,7 +27,6 @@ Issue Library Book via QR Code
 
     <content src="index.html" />
 
-<gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />
 <gap:plugin name="it.adacto.cordova.device" version="0.1" />
 
 </widget>
