@@ -68,7 +68,7 @@ navigator.notification.alert(
 );
 
 
-/*
+
 QRScanner.scan(displayContents);
 
 function displayContents(err, text){
@@ -82,8 +82,9 @@ function displayContents(err, text){
   }
 }
 
+QRScanner.scan(displayContents);
 QRScanner.show();
-*/
+alert('dd');
 
 /////////////////////
     }
