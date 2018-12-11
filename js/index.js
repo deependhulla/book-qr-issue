@@ -50,28 +50,12 @@ var xsrcx = "http://office.clubemerald.in/clubmaster/swimmingcardcheck.php?";
 var zxx='<iframe src="'+xsrcx+'" name="dvdiframex" id="dvdiframex"  width="'+swx+'" height="'+shx+'"  frameborder=0 >.</iframe>';
 // document.getElementById('dvdiframe').src = xsrc;
         yux.innerHTML = zxx;
- function onNfc(nfcEvent) {
-
-        var tag = nfcEvent.tag;
-        var tagId = nfc.bytesToHexString(tag.id);
-        //navigator.notification.alert(tagId);
-  //      alert(tagId);
-//        var y=document.getElementById("randx");
-        var yu=document.getElementById("randurl");
-  //      y.innerHTML = tagId;
-// var xsrc = "http://office.technogroup.co.in/welcomenfc.php?pinx="+tagId;
-// var xsrc = "http://192.168.1.200/memberasp/memberid.asp?ID="+tagId;
 var xsrc = "http://office.clubemerald.in/clubmaster/swimmingcardcheck.php?ID="+tagId;
-//alert(xsrc);
 var sh=window.innerHeight;
 var sw=window.innerWidth;
-
 var zx='<iframe src="'+xsrc+'" name="dvdiframe" id="dvdiframe"  width="'+sw+'" height="'+sh+'"  frameborder=0>.</iframe>';
-// document.getElementById('dvdiframe').src = xsrc;
         yu.innerHTML = zx;
 
-    }
-//alert("c");
 
 function win() {
         //var yl=document.getElementById("randy");
