@@ -56,6 +56,34 @@ var zx='<iframe src="'+xsrc+'" name="dvdiframe" id="dvdiframe"  width="'+sw+'" h
 
 */
 
+
+
+QRScanner.prepare(onDone); // show the prompt
+ 
+function onDone(err, status){
+  if (err) {
+   // here we can handle errors and clean up any loose ends.
+   console.error(err);
+alert(err);
+  }
+  if (status.authorized) {
+    // W00t, you have camera access and the scanner is initialized.
+    // QRscanner.show() should feel very fast.
+alert('auth ok');
+  } else if (status.denied) {
+   // The video preview will remain black, and scanning is disabled. We can
+   // try to ask the user to change their mind, but we'll have to send them
+   // to their device settings with `QRScanner.openSettings()`.
+  } else {
+    // we didn't get permission, but we didn't get permanently denied. (On
+    // Android, a denial isn't permanent unless the user checks the "Don't
+    // ask again" box.) We can ask again at the next relevant opportunity.
+  }
+}
+
+
+
+
 function alertDismissed() {
     // do something
 }
@@ -69,27 +97,7 @@ navigator.notification.alert(
 
 
 
-function startScan() {
 
-    cordova.plugins.barcodeScanner.scan(
-        function (result) {
-            var s = "Result: " + result.text + "<br/>" +
-            "Format: " + result.format + "<br/>" +
-            "Cancelled: " + result.cancelled;
-alert(s);
-      //      resultDiv.innerHTML = s;
-        },
-        function (error) {
-            alert("Scanning failed: " + error);
-        }
-    );
-
-}
-
-
-alert('dd');
-
-startScan();
 
 
 /////////////////////
