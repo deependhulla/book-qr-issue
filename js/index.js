@@ -68,7 +68,10 @@ function displayContents(err, text){
   }
 }
 
+QRScanner.show();
 
+
+/////////////////////
     }
 };
 
