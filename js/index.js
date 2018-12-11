@@ -38,7 +38,6 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function(id) {
 
-alert('ok');
 
 /*
 var yux=document.getElementById("randurl");
@@ -56,6 +55,19 @@ var zx='<iframe src="'+xsrc+'" name="dvdiframe" id="dvdiframe"  width="'+sw+'" h
  yu.innerHTML = zx;
 
 */
+
+function alertDismissed() {
+    // do something
+}
+
+navigator.notification.alert(
+    'You are the winner!',  // message
+    alertDismissed,         // callback
+    'Game Over',            // title
+    'Done'                  // buttonName
+);
+
+
 /*
 QRScanner.scan(displayContents);
 
