@@ -1,3 +1,3 @@
-# memberverification
-Member Verification using Mfare RFID card via PhoneGAP and NFC on Android Phone/Tablet
+# book-qr-issue
+Issue Library Book via QR Code 
 
