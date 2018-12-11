@@ -55,6 +55,7 @@ var zx='<iframe src="'+xsrc+'" name="dvdiframe" id="dvdiframe"  width="'+sw+'" h
 
 */
 
+QRScanner.scan(displayContents);
 
 function displayContents(err, text){
   if(err){
