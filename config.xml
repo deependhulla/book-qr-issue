@@ -23,7 +23,7 @@ Issue Library Book via QR Code
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
     <preference name="orientation" value="portrait" />
-<icon src="res/icon/android/man129.png" />
+<icon src="res/icon/android/book.png" />
 
     <content src="index.html" />
 
