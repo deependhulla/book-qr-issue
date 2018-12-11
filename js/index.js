@@ -38,6 +38,8 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function(id) {
 
+alert('ok');
+
 /*
 var yux=document.getElementById("randurl");
 var shx=window.innerHeight;
@@ -54,7 +56,7 @@ var zx='<iframe src="'+xsrc+'" name="dvdiframe" id="dvdiframe"  width="'+sw+'" h
  yu.innerHTML = zx;
 
 */
-
+/*
 QRScanner.scan(displayContents);
 
 function displayContents(err, text){
@@ -69,7 +71,7 @@ function displayContents(err, text){
 }
 
 QRScanner.show();
-
+*/
 
 /////////////////////
     }

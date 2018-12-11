@@ -4,10 +4,10 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.deependhulla.com.bookqrissue"
         versionCode   = "11"
-        version   = "1.2.3"
+        version   = "1.2.4"
 >
 
-    <name>QR Book Issue 1.2.3</name>
+    <name>QR Book Issue </name>
 
     <description>
 Issue Library Book via QR Code
