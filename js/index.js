@@ -37,51 +37,37 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-//        var parentElement = document.getElementById(id);
-//        var listeningElement = parentElement.querySelector('.listening');
-//        var receivedElement = parentElement.querySelector('.received');
 
-//        listeningElement.setAttribute('style', 'display:none;');
-//        receivedElement.setAttribute('style', 'display:block;');
+/*
 var yux=document.getElementById("randurl");
 var shx=window.innerHeight;
 var swx=window.innerWidth;
 var xsrcx = "http://office.clubemerald.in/clubmaster/swimmingcardcheck.php?";
 var zxx='<iframe src="'+xsrcx+'" name="dvdiframex" id="dvdiframex"  width="'+swx+'" height="'+shx+'"  frameborder=0 >.</iframe>';
-// document.getElementById('dvdiframe').src = xsrc;
         yux.innerHTML = zxx;
+
+        var yu=document.getElementById("randurl");
 var xsrc = "http://office.clubemerald.in/clubmaster/swimmingcardcheck.php?ID="+tagId;
 var sh=window.innerHeight;
 var sw=window.innerWidth;
 var zx='<iframe src="'+xsrc+'" name="dvdiframe" id="dvdiframe"  width="'+sw+'" height="'+sh+'"  frameborder=0>.</iframe>';
-        yu.innerHTML = zx;
+ yu.innerHTML = zx;
+
+*/
 
 
-function win() {
-        //var yl=document.getElementById("randy");
-       // yu.innerHTML = "NFC Active";
-      //  alert("Listening for NFC Tags");
-    }
+function displayContents(err, text){
+  if(err){
+    // an error occurred, or the scan was canceled (error code `6`)
+    alert(err);
+  } else {
+    // The scan completed, display the contents of the QR code:
+    alert(text);
 
-//alert("d");
-    function fail(error) {
-        //var yl=document.getElementById("randy");
-        //yu.innerHTML = "NFC Not Active . Check Settings.";
-        //alert("Error NFC listener -- check setting");
-    }
-
-//alert("e");
-
-    nfc.addTagDiscoveredListener(onNfc, win, fail);
-//alert("f");
-// nfc.addTagDiscoveredListener(
-// function() {       document.write("Found an NDEF formatted tag");    },                
-//function() {alert("success"); },
-//function() {alert("non-success"); },
-//            );
+  }
+}
 
 
-        console.log('Received Event: ' + id);
     }
 };
 
