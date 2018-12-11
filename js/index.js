@@ -69,23 +69,26 @@ navigator.notification.alert(
 
 
 
-QRScanner.scan(displayContents);
+function startScan() {
 
-function displayContents(err, text){
-  if(err){
-    // an error occurred, or the scan was canceled (error code `6`)
-    alert(err);
-  } else {
-    // The scan completed, display the contents of the QR code:
-    alert(text);
+    cordova.plugins.barcodeScanner.scan(
+        function (result) {
+            var s = "Result: " + result.text + "<br/>" +
+            "Format: " + result.format + "<br/>" +
+            "Cancelled: " + result.cancelled;
+alert(s);
+      //      resultDiv.innerHTML = s;
+        },
+        function (error) {
+            alert("Scanning failed: " + error);
+        }
+    );
 
-  }
-}
 
-QRScanner.scan(displayContents);
-QRScanner.show();
+
 alert('dd');
 
+startScan();
 /////////////////////
     }
 };
