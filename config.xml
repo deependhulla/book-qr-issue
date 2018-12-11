@@ -19,7 +19,7 @@ Issue Library Book via QR Code
  <access origin="*" />
 
     <preference name="permissions" value="none"/>
-    <preference name="phonegap-version" value="3.7.0" /> 
+    <preference name="phonegap-version" value="6.5.0" /> 
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
     <preference name="orientation" value="portrait" />
